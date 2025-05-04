@@ -1,97 +1,155 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 💸 Crypto Tracker App
 
-# Getting Started
+A production-grade, cross-platform **React Native cryptocurrency tracker** application developed to function seamlessly on both **Android** and **iOS** devices. The app utilizes the [CoinGecko API](https://www.coingecko.com/en/api) to retrieve real-time digital asset data, including market prices, volume, and historical performance metrics.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 📱 Platform Compatibility
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+| Platform | Support Status |
+|----------|----------------|
+| Android  | ✅ Fully Supported |
+| iOS      | ✅ Fully Supported |
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
-# Using npm
-npm start
+## 🚀 Key Features
 
-# OR using Yarn
-yarn start
+- 🔍 Real-time coin data from CoinGecko API
+- 📈 Interactive historical price charts
+- 📊 Market cap, volume, and price change metrics
+- ⚡ Hermes engine enabled for Android performance optimization
+- 🧩 Componentized and modular UI structure
+- 🔐 Secure architecture and third-party integrations
+
+---
+
+## 📸 Screenshots
+
+> *(Include emulator or real-device screenshots here to showcase the UI and features.)*
+
+---
+
+## 🧰 Technology Stack
+
+- **React Native CLI** (not Expo)
+- **JavaScript (ES6+)**
+- **React Navigation** – routing and screen transitions
+- **Victory Native** / **react-native-svg-charts** – for graph rendering
+- **Hermes** – lightweight JavaScript engine for Android
+- **CoinGecko API** – market data provider
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/rsuneel7351/Crypto-app.git
+cd crypto-app
 ```
 
-## Step 2: Build and run your app
+### 2. Install Dependencies
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. iOS Specific Setup (MacOS Only)
+
+```bash
+cd ios
+pod install
+cd ..
+```
+
+### 4. Start Metro Bundler
+
+```bash
+npx react-native start
+```
+
+---
+
+## 📱 Running the App
 
 ### Android
 
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```bash
+npx react-native run-android
 ```
 
 ### iOS
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+```bash
+npx react-native run-ios
 ```
 
-Then, and every time you update your native dependencies, run:
+> Ensure that the respective emulator/simulator is running before executing the above commands.
 
-```sh
-bundle exec pod install
+---
+
+## 📦 Build Instructions
+
+### Generate a Signed APK (Android)
+
+```bash
+cd android
+./gradlew assembleRelease
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+APK will be available at:
+```
+android/app/build/outputs/apk/release/
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+### Generate an Android App Bundle (AAB)
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+```bash
+cd android
+./gradlew bundleRelease
+```
 
-## Step 3: Modify your app
+AAB will be available at:
+```
+android/app/build/outputs/bundle/release/
+```
 
-Now that you have successfully run the app, let's make changes!
+---
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## 🔐 Environment Variables
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+- The CoinGecko API does not require authentication; hence, no API key configuration is necessary.
+- For extensibility, `.env` integration can be added using `react-native-dotenv`.
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+---
 
-## Congratulations! :tada:
+## 📈 Potential Enhancements
 
-You've successfully run and modified your React Native App. :partying_face:
+- [ ] Add coin watchlist or favorites
+- [ ] Enable dark mode toggle
+- [ ] Implement authentication and user portfolio management
+- [ ] Integrate push notifications for coin alerts
 
-### Now what?
+---
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
 
-# Troubleshooting
+---
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## 👤 Author
 
-# Learn More
+**Suneel Kumar**  
+React Native Developer  
+GitHub: [rsuneel7351](https://github.com/rsuneel7351)  
+LinkedIn: *[suneel7351](https://www.linkedin.com/in/suneel7351/)*
 
-To learn more about React Native, take a look at the following resources:
+---
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## 📢 Acknowledgments
+
+- [CoinGecko](https://coingecko.com) for API data access
+- React Native and associated open-source contributors
+- Design inspiration from various open-source crypto dashboards
