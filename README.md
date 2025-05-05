@@ -143,7 +143,8 @@ android/app/build/outputs/bundle/release/
 
 **Suneel Kumar**  
 React Native Developer  
-GitHub: [rsuneel7351](https://github.com/rsuneel7351)  
+GitHub1: [rsuneel7351](https://github.com/rsuneel7351)  
+GitHub2: [suneel7351](https://github.com/suneel7351)  
 LinkedIn: *[suneel7351](https://www.linkedin.com/in/suneel7351/)*
 
 ---
